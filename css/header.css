@@ -1,0 +1,58 @@
+@import url(root.css);
+
+header {
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    .dropdown {
+        display: none;
+    }
+}
+
+#logo-2 {
+    display: none;
+}
+
+.buttons-container-header {
+    display: flex;
+    gap: 1.12vw;
+    font: var(--fonte-button);
+
+    .button-about, .button-enter, .button-help {
+        font: var(--fonte-button);
+        padding: 0.695vw 2.23vw;
+        cursor: pointer;
+    }
+    .button-about, .button-help {
+        color: var(--verde-base);
+        background-color: transparent;
+        border: none;
+    }
+    .button-enter {
+        background-color: var(--verde-base);
+        color: var(--branco-padrao);
+        border: none;
+        border-radius: 8px;
+        box-shadow: var(--sombra);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo-1 {
+        display: none;
+    }
+    #logo-2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .dropdown {
+        display: block !important;
+    }
+    .button-about, .button-help {
+        display: none;
+    }
+}

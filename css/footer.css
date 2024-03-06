@@ -1,0 +1,93 @@
+@import url(root.css);
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    hr {
+        background-color: var(--divider);
+        height: 2px;
+        border: 0;
+        width: 1118px;
+    }
+}
+
+.footer-cima {
+    display: flex;
+    justify-content: space-around;
+
+    .footer-icones {
+        display: flex;
+        gap: 56px;
+        flex-direction: column;
+        span {
+            display: flex;
+            gap: 16px;
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+    .footer-text {
+        display: flex;
+        gap: 5.56vw;
+
+        h3 {
+            font: var(--fonte-titulo-footer);
+            color: var(--preto-padrao);
+        }
+        p {
+            font: var(--fonte-texto-footer);
+            cursor: pointer;
+            color: var(--preto-padrao);
+        }
+        p:hover {
+            text-decoration: underline;
+        }
+        span {
+            display: flex;
+            flex-direction: column;
+            gap: 1.67vw;
+        }
+    }
+}
+
+.footer-baixo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1.67vw;
+    color: var(--cinza-padrao);
+    font: var(--fonte-texto-footer-menor);
+    margin-bottom: 24px;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.56vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-cima {
+        flex-direction: column;
+        gap: 1.67vw;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-text {
+        text-align: center;
+        span {
+            width: 160px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-text {
+        margin-top: 3.34vw;
+        flex-direction: column;
+        text-align: center;
+    }
+}

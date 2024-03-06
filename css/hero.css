@@ -1,0 +1,90 @@
+@import url(root.css);
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font: var(--fonte-titulo-hero);
+            width: 33.88vw;
+            text-align: left;
+            color: var(--preto-padrao);
+        }
+        hr {
+            width: 11.11vw;
+            height: 2px;
+            margin: 16px 0;
+            background-color: var(--verde-base);
+            border: 0;
+        }
+        p {
+            font: var(--fonte-hero);
+            width: 33.88vw;
+            margin-bottom: 32px;
+            color: var(--preto-padrao);
+        }
+        .image-hero-secondary {
+            display: none;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1.67vw;
+            .hero-button-branco, .hero-button-verde {
+                padding: 0.695vw 2.23vw;
+                border-radius: 8px;
+                font: var(--fonte-button);
+                box-shadow: var(--sombra);
+                cursor: pointer;
+            }
+            .hero-button-verde {
+                color: var(--branco-padrao);
+                background-color: var(--verde-base);
+                border: none;
+            }
+            .hero-button-branco {
+                color: var(--verde-base);
+                border: 2px solid var(--verde-base);
+                background-color: var(--branco-padrao);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        justify-content: space-between;
+        gap: 2.78vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        justify-content: center;
+        .hero-text {
+            width: 100%;
+            align-items: center;
+            h1, p {
+                width: 100%;
+                text-align: center;
+            }
+            .image-hero-secondary {
+                display: block;
+                margin-bottom: 3.34vw;
+            }
+        }
+        .image-hero-primary {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .image-hero-secondary {
+        display: none !important;
+    }
+}

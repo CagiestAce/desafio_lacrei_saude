@@ -1,0 +1,39 @@
+body {
+    margin: 0px 9.58vw;
+    background: linear-gradient(180deg, rgba(245,255,251,1) 25%, rgba(255,255,255,1) 100%);
+    hr {
+        width: 77.63vw;
+        background-color: var(--divider);
+        height: 2px;
+        border: 0;
+        margin-bottom: 48px;
+
+    }
+}
+
+main {
+    margin: 48px 0px 64px 0px;
+}
+
+:root {
+    /* ---Cores Começo--- */
+    --branco-padrao: #FFFFFF;
+    --verde-base: #018762;
+    --preto-padrao: #131313;
+    --cinza-padrao: #515151;
+    --divider: #B2DFD0;
+    /* ---Cores Fim--- */
+
+    /* ---Fontes Começo--- */
+    --fonte-button: 700 18px "Nunito", sans-serif;
+    --fonte-titulo-hero: 700 48px "Nunito", sans-serif;
+    --fonte-hero: 500 24px "Nunito", sans-serif;
+    --fonte-titulo-footer: 700 18px "Nunito", sans-serif;
+    --fonte-texto-footer: 500 16px "Nunito", sans-serif;
+    --fonte-texto-footer-menor: 500 14px "Nunito", sans-serif;
+    /* ---Fontes Fim--- */
+
+    /* ---Sombras Começo--- */
+    --sombra: 0px 8px 20px rgba(19, 19, 19, 0.24);
+    /* ---Sombras Fim--- */
+}

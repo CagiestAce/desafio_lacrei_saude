@@ -1,0 +1,19 @@
+@import url(root.css);
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 5vw;
+    right: 9.584vw;
+    padding: 16px;
+    background-color: var(--branco-padrao);
+    border: 2px solid var(--verde-base);
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    box-shadow: var(--sombra);
+  }
+
+#scrollToTopBtn.show {
+    opacity: 1;
+}
